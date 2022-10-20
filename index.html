@@ -5,22 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body background-color="white">
+    <body background="https://img.woyaogexing.com/2016/02/29/d7d04776d435c780!600x600.jpg" width="1440" height="1920" border="0" alt=""></body>
     <title >20203042胡凯鑫的主页</title>
-    
-   <style>
-    .h1{
-        text-align: center;
-    }
-    body{
-        background-repeat:no-repeat;background-size:auto 2800px;background-position: center;
-        
-    }
-    
-   </style>
+    <style>
+        #p1{
+            color: red;
+        }
+    </style>
 
 </head>
 <body background="https://c-ssl.duitang.com/uploads/item/202004/12/20200412095043_fdcqy.jpg">
+    <embed src="https://www.kugou.com/song/1b01aeaa.html#hash=60432D06841FC5846D7FC74C46196225&album_id=38714155" width="1440" height="156"></embed>
     <h1 class="h1">454</h1>
-    <a href="word1.html">第一次作业</a>
+    <a href="word1.html"target="_blank">第一次作业</a>
+    <a href="word2.html"target="_blank">第二次作业</a>
+    <a href="word3.html"target="_blank">第三次作业</a>
+   
+    <p style="text-align: center;" id="p1">
+        <span>已经在大学度过了</span>
+        <span id='now'></span>
+        <span>天</span>
+</p>
+<script>
+var date = new Date();
+var y = date.getFullYear();
+var m = date.getMonth()+1;
+var d = date.getDate();
+var pass1 = Date.parse('2020/9/25');  //开始的日期
+var pass2 = Date.parse(y+'/'+m+'/'+d);  //当前日期
+var time = (pass2-pass1)/(1000*60*60*24);  //过去的天数
+document.getElementById("now").innerHTML=(pass2);
+document.getElementById("birth").innerHTML=(time);
+</script>
 </body>
 </html>
